@@ -15,11 +15,15 @@ public class MainController {
     }
     
     @PreAuthorize("hasRole('USER')")
-    @GetMapping("/users")
+    @GetMapping("/api/users")
     public String users() {
         return "Welcome to Users Area";
     }
     
-
+    @PreAuthorize("hasRole('ADMIN')")
+    @GetMapping("/api/admin")
+    public String admin() {
+        return "Welcome to Admin Area";
+    }
     
 }

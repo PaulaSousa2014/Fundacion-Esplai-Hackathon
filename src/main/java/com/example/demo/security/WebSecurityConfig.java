@@ -70,7 +70,7 @@ public class WebSecurityConfig {
 	    .authorizeHttpRequests()
 	    	.requestMatchers("/").permitAll()
 	        .requestMatchers("/auth/**").permitAll()
-	        .requestMatchers("/users/**").permitAll().anyRequest().authenticated()
+	        .requestMatchers("/api/**").permitAll().anyRequest().authenticated()
 	       
 	    .and()
 	    .exceptionHandling().authenticationEntryPoint(unauthorizedHandler)
