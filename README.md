@@ -40,8 +40,7 @@ Implementing user login and registration is a fundamental functionality of any b
 1. Include a Java/Spring Boot backend.
 2. Everything should be stored in Railway MySQL Database.
 3. Include authentication with Spring Security JWT.
-4. Include unit and integration tests.
-5. Include robust error handling.
+
 
 ## API Routes
 
